@@ -226,16 +226,28 @@ header {
   0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
-#movie .col-md-8 {
-  margin-top: 25px;
-}
-
 #movie h1 {
   font-size: 1.5em;
 }
 
 #movie h5 {
   font-size: 1em;
+}
+
+.breadcrumb {
+  background: transparent !important;
+}
+
+@media (max-width: 990px) {
+  #movie {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #movie .col-md-8 {
+    margin-top: 35px;
+  }
 }
 
 @media (max-width: 500px) {
