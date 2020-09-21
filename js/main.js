@@ -17,7 +17,7 @@ console.log(path);
     getMovies(searchText);
 
     // store searach value in session when you're in movie.html page if not it will destroy the session
-    if(path === "/movie-app/movie") {
+    if(path === "/movie-app/movie/") {
       window.location = "/movie-app/";
       sessionStorage.setItem("search", searchText);
     } else {
