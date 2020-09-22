@@ -3,7 +3,7 @@ $(document).ready( () => {
 
   var path = window.location.pathname;
   var page = path.split("/").pop();
-console.log(page);
+console.log(path);
 
   // sessionStorage.clear();
 
@@ -17,8 +17,8 @@ console.log(page);
     getMovies(searchText);
 
     // store searach value in session when you're in movie.html page if not it will destroy the session
-    if(page === "movie.html") {
-      window.location = "/";
+    if(path === "/movie-app/movie") {
+      window.location = "/movie-app/";
       sessionStorage.setItem("search", searchText);
     } else {
       sessionStorage.clear();
@@ -95,7 +95,7 @@ getMovies(searchInputField.val() === "" || searchInputField.val() === null ? "20
   window.movieSelected = function (movieID) {
     // store data and pass data to other page
     sessionStorage.setItem("id", movieID);
-    window.location = "movie.html";
+    window.location = "/movie-app/movie";
     return false;
   }
 

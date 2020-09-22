@@ -15,7 +15,7 @@ $(document).ready( () => {
           <h5 class="mb-1">${movieYear.length > 5 ? movieYear : movieYear.replace(/–/g, "")}</h5>
           <h5 class="mb-4">${movie.Genre}</h5>
           <p><i class="fas fa-star"></i> ${movie.Ratings[0].Value}</p>
-          <a href="https://www.imdb.com/title/${movie.imdbID}" target="_blank"><img src="./images/logo-imdb.svg" alt="imdb"></a>
+          <a href="https://www.imdb.com/title/${movie.imdbID}" target="_blank"><img src="../images/logo-imdb.svg" alt="imdb"></a>
           <h5 class="mt-5">Plot:</h5>
           <p class="mb-5"><em>${movie.Plot}</em></p>
 
