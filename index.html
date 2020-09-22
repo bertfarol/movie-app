@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="shortcut icon" href="" type="image/png">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://kit.fontawesome.com/393b917e55.js" crossorigin="anonymous"></script>
+<title>Movie gallery - Search your all time favorite movie!</title>
+</head>
+<body>
+<header>
+  <div class="movie-container">
+  <nav class="navbar navbar-dark">
+    <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="Movie gallery"></a>
+    <form id="search-form" class="form-inline my-2 my-lg-0">
+      <span class="search-field">
+        <i class="fas fa-search"></i>
+        <input id="search-text" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+       </span>
+      <!-- <button class="btn btn-light my-2 my-sm-0" type="submit">Search</button> -->
+    </form>
+  </nav>
+</div>
+</header>
+
+<div class="container">
+  <div class="movie-list">
+    <h5 class="search-title mb-2"></h5>
+    <p class="total-result text-muted"></p>
+    <div id="movies" class="row">
+        <div class="loading text-center">
+          <i class="fas fa-spinner fa-pulse fa-3x"></i>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
